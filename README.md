@@ -5,10 +5,6 @@ I was a noob once too, and I accidentally hard bricked my first device attemptin
 ## Installing HyperOS
 1. Boot into TWRP via `fastboot boot (drag in twrp img)`
 2. Press the "Wipe" button, then press the "Format Data" button at the bottom of your screen
-3. Type "yes" to confirm the format
-4. Press the home button, connect your phone to your computer with a USB cable, then press "Mount" > "Mount USB Storage"
-5. Transfer the ROM file into your internal storage
-6. Once done, press the "Unmount" button and then press the home button once again. At this point, it is safe to disconnect the USB cable.
-7. Press "Install", find the ROM file, select it, then swipe the slider at the bottom screen. Installation will begin.
-
-**By the way, if you want TWRP to function as the recovery permanently on the device, go to Advanced and scroll down, then use "Flash Current TWRP"**
+3. Type "yes" to confirm the format, then go back and press "Advanced Wipe" and wipe Data and Internal Storage
+4. Press the home button, press "Advanced > ADB Sideload"
+5. Assuming hyperos.zip is in your platform-tools folder, open a cmd window in the platform-tools folder and type `adb sideload <drag in HyperOS zip from file explorer>`. The process will begin.
